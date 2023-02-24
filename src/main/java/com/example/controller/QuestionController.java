@@ -36,9 +36,10 @@ public class QuestionController {
     }
 
 
-    @GetMapping("/create/{id}")
-    public String createAnswer(Model model, @PathVariable("id") Integer id, @RequestParam String content){
-        Question question = this.questionService.getQuestion(id);
-        return String.format("redirect:/question/detail/%s",id);
-    }
+//    @GetMapping("/create/{id}")
+//    public String createAnswer(Model model, @PathVariable("id") Integer id, @RequestParam String content){
+//        Question question = this.questionService.getQuestion(id);
+//        return String.format("redirect:/question/detail/%s",id);
+//    }
+
 }
